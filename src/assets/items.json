@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "Bhujia",
+      "type": "namkeen",
+      "quantity": 2,
+      "price": 22.22
+    },  
+    {
+      "id": 2,
+      "name": "Amazon Echo",
+      "type": "electronics",
+      "quantity": 1,
+      "price": 5000
+    },
+    {
+      "id": 3,
+      "name": "Smart TV",
+      "type": "electronics",
+      "quantity": 1,
+      "price": 40000
+    }
+  ]
+  

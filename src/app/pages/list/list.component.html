@@ -1,0 +1,49 @@
+
+<h2>Delivery list</h2>
+
+<div class="flexContainer">
+
+  <mat-card class="flexItem" *ngFor="let item of items"
+    id="{{item.id}}">
+
+    <div class="img-container">
+      <img src="{{ item.image }}"
+        class="person-img" title="ID: {{ item.id }}">
+    </div>
+
+    <mat-card-title >
+      {{ item.name }}
+    </mat-card-title>
+    <mat-card-content>
+      
+      <ul >
+        <li>Rs. {{item.price}}</li>
+        <li>Type: {{item.type}}</li>
+        <li>Quantity: {{item.quantity}}</li>
+
+      </ul>
+    </mat-card-content>
+    
+
+    <mat-card-actions class="pizza-card-bottom">
+    
+      <mat-slide-toggle [checked]="isDelivered">Mark Delivered!</mat-slide-toggle>
+
+      <mat-slide-toggle [checked]="isDelivered">Mark Party not available!</mat-slide-toggle>
+      
+      <p>Time left to deliver: {{ timeToNext$ | async }}</p>
+
+      <!-- <mat-button-toggle-group #group="matButtonToggleGroup" multiple=false>
+        <mat-button-toggle *ngFor="let item of toggleOptions;" (change)="selectionChanged($event)" [value]="item">{{item}}</mat-button-toggle>
+      </mat-button-toggle-group>
+      <div class="example-selected-value">Selected value: {{group.value}}</div> -->
+
+    </mat-card-actions>   
+
+  </mat-card>
+
+  <mat-card class="flexItem" *ngIf="item?.length == 0">
+    Not available.
+  </mat-card>
+
+</div>

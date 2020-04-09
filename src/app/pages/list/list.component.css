@@ -1,0 +1,77 @@
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.flexContainer {
+  display: list-item;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  padding: 0px 30px;
+  justify-content: center;
+}
+
+.flexItem {
+  width: 800px;
+  height: auto;
+  margin: 30px;
+  text-align: center;
+}
+
+.person-img {
+  max-width: 150px;
+  margin: 20px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container i {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  cursor: pointer;
+}
+
+.delete {
+  color: orangered;
+}
+
+.hide {
+  display: none;
+}
+
+
+mat-slider {
+  width: 300px;
+}
+
+.pizza-list {
+  display: inline-block;
+  position: relative;
+  top: -65px;
+  left: 0px;
+}
+
+.pizza-card {
+  max-width: 800px;
+  margin: 2px;
+  border-bottom: 1px solid #c4c4d2;
+}
+
+.pizza-card-bottom {
+  box-sizing: border-box;
+  width: 35%;
+  display: inline-block;
+  text-align: right;
+}
+
+.mat-button-toggle-checked {
+  background-color: #a0c2e4 !important;
+}
+
+.pizza-card-header {
+  justify-content: center !important;
+}
